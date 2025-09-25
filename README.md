@@ -1,4 +1,4 @@
 To run:
 
-Execute in directory the command 
+Execute in directory the command:         
   vsim -do i_cache.do
