@@ -9,6 +9,7 @@
 `define TAG 11:8		// position of tag in address
 `define INDEX 7:4		// position of index in address
 `define OFFSET 3:0		// position of offset in address
+`timescale 1ns / 1ps
 
 module i_cache
 #(

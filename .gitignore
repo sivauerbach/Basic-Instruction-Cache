@@ -1,0 +1,5 @@
+/.simvision/
+/cadence/
+/xcelium.d/
+simulation_output.*
+xrun.*
