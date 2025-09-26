@@ -3,3 +3,6 @@
 /xcelium.d/
 simulation_output.*
 xrun.*
+/src/work/
+*.wlf
+transcript
