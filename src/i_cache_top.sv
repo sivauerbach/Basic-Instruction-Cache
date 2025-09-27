@@ -11,8 +11,8 @@ module i_cache_top #(parameter DATA_WIDTH = 32,parameter ADD_WIDTH = 12, paramet
     input wire         i_cache_wren,
 
     // outputs  to testbench 
-    wire        i_cache_hit_miss,
-    wire [DATA_WIDTH-1:0] cpu_data_out
+    output wire        i_cache_hit_miss,
+    output wire [DATA_WIDTH-1:0] cpu_data_out
 );
 
     // Internal wires between cache and memory
@@ -49,7 +49,7 @@ module i_cache_top #(parameter DATA_WIDTH = 32,parameter ADD_WIDTH = 12, paramet
     defparam DUT_MEM.DATA_WIDTH = DATA_WIDTH;
     defparam DUT_MEM.MEM_FILE = "i_mem_data.txt";
 
-    mem DUT_MEM (
+    i_cache_mem DUT_MEM (
         .clock(clk),
         .data(data_in),
         .rdaddress(rd_addr),

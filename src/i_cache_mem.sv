@@ -6,7 +6,9 @@
  * memory module  
  */
 
-module mem
+`timescale 1ns / 1ps
+
+module i_cache_mem
 #(
   parameter DATA_WIDTH = 32,
   parameter ADD_WIDTH = 12,

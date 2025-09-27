@@ -127,7 +127,7 @@ begin
 				// write hit
 				else if (cpu_wen)
 				begin
-					_cpu_data_out = {DATA_WIDTH{1'b0}};
+					_cpu_data_out <= {DATA_WIDTH{1'b0}};
 					mem1[cpu_add[`INDEX]] <= cpu_data_in;
 					dirty1[cpu_add[`INDEX]] <= 1;
 				end
@@ -144,7 +144,7 @@ begin
 				// write hit
 				else if(cpu_wen)
 				begin
-					_cpu_data_out = {DATA_WIDTH{1'b0}};
+					_cpu_data_out <= {DATA_WIDTH{1'b0}};
 					mem2[cpu_add[`INDEX]] <= cpu_data_in;
 					dirty2[cpu_add[`INDEX]] <= 1;
 				end
